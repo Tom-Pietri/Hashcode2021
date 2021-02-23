@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 import java.io.File
 
 
-internal class TestKtTest {
+internal class HashCodeRunnerTest {
     @Test
     fun `run Input A`() {
         val input = File("./src/main/resources/a_example.in").readLines(Charsets.UTF_8)
