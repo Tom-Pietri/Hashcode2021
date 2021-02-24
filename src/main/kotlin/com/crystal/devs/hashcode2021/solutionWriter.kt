@@ -1,4 +1,4 @@
-package com.monochromecivilians.hashcode2021
+package com.crystal.devs.hashcode2021
 
 import java.io.File
 

@@ -1,4 +1,4 @@
-package com.monochromecivilians.hashcode2021
+package com.crystal.devs.hashcode2021
 
 fun parseInput(input: List<String>): ParsedInput {
     return ParsedInput(input = input)
