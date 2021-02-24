@@ -1,4 +1,4 @@
-package com.monochromecivilians.hashcode2020
+package com.monochromecivilians.hashcode2021
 
 fun runInput(input: List<String>, inputName: String): Int {
     val parsedInput = parseInput(input)

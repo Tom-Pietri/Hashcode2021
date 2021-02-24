@@ -1,4 +1,4 @@
-package com.monochromecivilians.hashcode2020
+package com.monochromecivilians.hashcode2021
 
 import java.io.File
 

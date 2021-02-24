@@ -1,4 +1,4 @@
-package com.monochromecivilians.hashcode2020
+package com.monochromecivilians.hashcode2021
 
 fun computeSolution(parsedInput: ParsedInput): Solution {
     return Solution(parsedInput)

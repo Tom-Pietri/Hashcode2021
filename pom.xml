@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.monochromecivilians</groupId>
-    <artifactId>hashcode2020</artifactId>
+    <artifactId>hashcode2021</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hashcode2020</name>
-    <description>Project for hashcode 2020</description>
+    <name>hashcode2021</name>
+    <description>Project for hashcode 2021</description>
 
     <properties>
         <java.version>1.8</java.version>
