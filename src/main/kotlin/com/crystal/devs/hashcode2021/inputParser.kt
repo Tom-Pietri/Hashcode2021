@@ -8,6 +8,8 @@ fun parseInput(input: List<String>): ParsedInput {
         Street(name, length.toInt(), from.toInt(), to.toInt())
     }.map { it.name to it }.toMap()
 
+    val intersections = streets.values.groupBy { it.to }.map { it.key to Intersection(it.key, it.value) }.toMap()
+
     val cars = input.subList(streetsNumber + 1, input.size).map {
         val split = it.split(" ")
         val carStreets = split.subList(1, split.size)
@@ -17,13 +19,17 @@ fun parseInput(input: List<String>): ParsedInput {
     return ParsedInput(simulationDurationInSeconds = duration,
             scorePerCar = scorePerCar,
             streets = streets,
-            cars = cars)
+            cars = cars,
+            intersections = intersections)
 }
 
 data class ParsedInput(val simulationDurationInSeconds: Int,
                        val scorePerCar: Int,
                        val streets: Map<String, Street>,
-                       val cars: List<Car>)
+                       val cars: List<Car>,
+                       val intersections: Map<Int, Intersection>)
+
+data class Intersection(val id: Int, val streets: List<Street>)
 
 data class Street(val name: String, val length: Int, var from: Int, var to: Int)
 
